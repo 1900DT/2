@@ -1,0 +1,13 @@
+#include  "stdio.h"
+void main(){
+int arr[]={1,2,3,6,54,11,20,34,12,19,65,63,};
+int length=sizeof(arr)/sizeof(arr[0];
+int max=process(arr,0,length-1);
+printf("该数组的最大值是%d\n",max);
+}
+void process(int arr[],int  L,int R){
+if(arr[L]==arr[R])  return arr[L];
+int mid=L+((R-L)>>1);
+int Left=process(arr,0,mid);
+int Right=process(arr,mid+1,R);
+}
